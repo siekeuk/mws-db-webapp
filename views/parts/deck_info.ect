@@ -1,0 +1,130 @@
+<div class="deckList-rapper">
+    <div id="message"></div>
+    <table class="decklist" id="test_table">
+      <thead>
+        <tr>
+          <th>
+            <div>
+              <span class="label" id="header_deckName" ><%- @deckInfo?.deckName %></span>
+            </div>
+          </th>
+          <th>
+            <div>
+              <span class="label" id="header_uploader" ><%- @deckInfo?.uploader %></span>
+            </div>
+          </th>
+        </tr>
+      </thead>
+
+      <tfoot>
+
+        <tr class="one-line download">
+          <th>
+            <div class="button-line">
+              <span id="download-messeage"></span>
+            </div>
+          </th>
+          <th>
+            <div class="button-line right">
+              <input style="" type="button" id="edit" name="edit" value="Edit" />
+              <input style="" type="button" id="download" name="download" value="Download" />
+            </div>
+          </th>
+        </tr>
+
+        <tr>
+          <th colspan="2">
+            <div class="first">
+              <label for="deckName">Deck Name：</label>
+              <input class="" id="deckName" name="deckName" type="text" value=""/>
+            </div>
+          </th>
+        </tr>
+
+        <tr>
+          <th colspan="2">
+            <div>
+              <label for="uploader">Uploader：</label>
+              <input class="" id="uploader" name="uploader" type="text" value=""/>
+            </div>
+          </th>
+        </tr>
+
+        <tr>
+          <th colspan="2">
+            <div>
+              <label for="comment">Comment：</label>
+              <textarea class="" style="" id="comment" name="comment" type="text"></textarea>
+            </div>
+          </th>
+        </tr>
+
+        <tr class ='edit-line'>
+          <th colspan="2">
+            <div>
+              <label for="editKey">Edit Key：</label>
+              <input class="" style="" id="editKey" name="editKey" type="text" value="" />
+            </div>
+          </th>
+        </tr>
+
+        <tr class ='edit-line delete'>
+          <th colspan="2">
+            <div>
+              <label for="delFlg">Delete：</label>
+              <input class="" style="" id="delFlg" name="delFlg" type="checkbox" value="del" />
+            </div>
+          </th>
+        </tr>
+
+        <tr>
+          <th colspan="2">
+            <div></div>
+          </th>
+        </tr>
+
+        <tr class="one-line edit-line upload">
+          <th>
+            <div class="button-line">
+              <input id="file" name="file" type="file" accept=".mwDeck"/>
+              <span id="upload-messeage"></span>
+            </div>
+          </th>
+          <th>
+            <div class="button-line right">
+              <input style="" type="button" id="upload" name="upload" value="Upload" />
+            </div>
+          </th>
+        </tr>
+
+      </tfoot>
+
+      <tbody id="deckInfo_tbody">
+        <tr>
+          <td id="" width="50%" valign="top">
+            <div id="lands">
+              <hr>
+              <span class="cardtotal"> - 土地(0) -</span>
+            </div>
+            <br>
+            <div id="creatures">
+              <hr>
+              <span class="cardtotal"> - クリーチャー(0) -</span>
+            </div>
+          </td>
+
+          <td width="50%" valign="top">
+            <div id="spells">
+              <hr>
+              <span class="cardtotal"> - 呪文(0) -</span>
+            </div>
+            <br>
+            <div id="sideboard">
+              <hr>
+              <span class="cardtotal"> - サイドボード(0) -</span>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+</div>

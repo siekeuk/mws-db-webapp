@@ -1,0 +1,344 @@
+.deckList-rapper {
+  max-width: 640px;
+  height: 450px;
+  padding: 0 10px;
+}
+.decklist,
+#test_table {
+  width: 100%;
+  max-width: 620px;
+  font-size: 12px;
+  font-family: Consolas, 'Courier New', Courier, Monaco, monospace;
+  border: 1px solid gray;
+  margin-bottom: 20px;
+}
+.decklist tbody#deckInfo_tbody > tr > td,
+#test_table tbody#deckInfo_tbody > tr > td {
+  vertical-align: top;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.decklist thead,
+#test_table thead {
+  border: 1px solid gray;
+  border-bottom: 1px double gray;
+  background-color: #B0C4DE;
+}
+.decklist thead .label,
+#test_table thead .label {
+  padding-left: 1em;
+  font-family: sans-serif;
+}
+.decklist thead #header_deckName,
+#test_table thead #header_deckName {
+  font-weight: bold;
+}
+.decklist thead th,
+#test_table thead th {
+  height: 2.5em;
+}
+.decklist thead th input[type=file],
+#test_table thead th input[type=file] {
+  text-align: right;
+}
+.decklist thead th div.first,
+#test_table thead th div.first {
+  margin-top: 5px;
+}
+.decklist thead th div.last,
+#test_table thead th div.last {
+  margin-bottom: 5px;
+}
+.decklist thead span#deckName,
+#test_table thead span#deckName {
+  padding-left: 1em;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+.decklist tfoot,
+#test_table tfoot {
+  border-top: 1px double gray;
+}
+.decklist tfoot tr,
+#test_table tfoot tr {
+  background-color: #B0C4DE;
+}
+.decklist tfoot tr.last,
+#test_table tfoot tr.last {
+  border-top: 1px solid gray;
+  background-color: #95C8D4;
+}
+.decklist tfoot tr.one-line,
+#test_table tfoot tr.one-line {
+  border: 1px solid gray;
+  background-color: #95C8D4;
+}
+.decklist tfoot tr.none-disp,
+#test_table tfoot tr.none-disp {
+  display: none;
+}
+.decklist tfoot tr th div,
+#test_table tfoot tr th div {
+  padding: 3px;
+}
+.decklist tfoot tr th div.first,
+#test_table tfoot tr th div.first {
+  margin-top: 5px;
+}
+.decklist tfoot tr th div.last,
+#test_table tfoot tr th div.last {
+  margin-bottom: 5px;
+}
+.decklist tfoot tr th div.button-line,
+#test_table tfoot tr th div.button-line {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.decklist tfoot tr label,
+#test_table tfoot tr label {
+  width: 15%;
+  display: block;
+  float: left;
+  text-align: right;
+  padding-top: 3px;
+}
+.decklist tfoot tr input[type=text],
+#test_table tfoot tr input[type=text] {
+  width: 35%;
+  height: 1.45em;
+}
+.decklist tfoot tr textarea,
+#test_table tfoot tr textarea {
+  width: 80%;
+  height: 60px;
+  line-height: 150%;
+}
+.decklist input,
+#test_table input {
+  font-size: 12px;
+}
+.decklist input#file,
+#test_table input#file {
+  font-size: 12px;
+  background-color: inherit;
+  border: none;
+}
+.decklist span,
+#test_table span {
+  padding: 3px;
+}
+.decklist td,
+#test_table td {
+  padding: 3px;
+}
+.decklist input:not([type=button]),
+#test_table input:not([type=button]),
+.decklist select,
+#test_table select,
+.decklist textarea,
+#test_table textarea {
+  height: auto;
+  padding: 1px;
+  border: 1px solid #bbb;
+  border-radius: 3px;
+  color: #000;
+  padding-left: 5px;
+  font-size: 12px;
+}
+.decklist input[type=button],
+#test_table input[type=button] {
+  margin-top: 1px;
+  margin-right: 3px;
+  margin-left: 3px;
+}
+.decklist .cardtotal,
+#test_table .cardtotal {
+  margin: 0 5px;
+  width: auto;
+}
+.decklist .right,
+#test_table .right {
+  text-align: right;
+  padding-right: 5px;
+}
+.decklist input.readOnly,
+#test_table input.readOnly,
+.decklist textarea.readOnly,
+#test_table textarea.readOnly {
+  border: 1px solid #B0C4DE;
+  background-color: #e6e6fa;
+}
+header {
+  padding: 10px;
+}
+.title {
+  border-left: 5px solid #b0c4de;
+  border-bottom: 1px solid #b0c4de;
+  padding: 3px 10px;
+  background: linear-gradient(#e6e6fa, #E8E2FF);
+}
+h1 {
+  margin: 0 0 0 3px;
+  font-size: 1.2em;
+  font-weight: bold;
+  font-family: 'Lucida Grande', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif;
+}
+h1 a {
+  font-weight: bold;
+  color: #000000;
+  text-decoration: none;
+}
+.exposition {
+  margin: 0 0 0 6px;
+  color: #999;
+  font-size: 0.7em;
+}
+.exposition a {
+  color: #5772AD;
+  text-decoration: none;
+}
+.exposition a:hover {
+  text-decoration: underline;
+  color: #234FDB;
+}
+div {
+  box-sizing: border-box;
+}
+div #message {
+  color: blue;
+}
+div #message.error {
+  color: red;
+}
+.search-rapper {
+  max-width: 640px;
+  padding: 0 10px;
+}
+.wide-rapper {
+  width: 620px;
+  margin-bottom: 2px;
+}
+input.half-wide {
+  width: 300px;
+}
+.button {
+  height: 22px;
+}
+.flavor {
+  font-family: "ＭＳ Ｐ明朝", "MS PMincho", "MS 明朝", serif;
+}
+.text {
+  line-height: 1.1;
+  margin: 3px 0;
+}
+button.btn-height {
+  padding: 6px 12px 5px !important;
+}
+button.btn:focus {
+  outline: 5px auto -webkit-focus-ring-color;
+}
+/* nav-header **********************************************************************/
+#nav-wrapper {
+  width: 100%;
+  height: 24px;
+  margin: -3px 0 -4px -11px;
+}
+#nav-wrapper ul {
+  list-style-type: none;
+  width: 100%;
+  height: 100%;
+}
+#nav-wrapper li {
+  width: 70px;
+  float: left;
+  font-family: 'Lucida Grande', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif;
+  font-size: 0.8em;
+  font-weight: bold;
+}
+#nav-wrapper li a {
+  border-right: 1px solid lightsteelblue;
+  border-left: 1px solid lightsteelblue;
+  text-align: center;
+  padding-top: 0.2em;
+  width: 100%;
+  display: block;
+  background-color: #E3E7FF;
+  color: #310000;
+  margin-right: 1px;
+  background: linear-gradient(#E8E2FF, #c2d5ed);
+}
+#nav-wrapper li a:hover {
+  background-color: #A6A6FF;
+  color: #ff0000;
+  background: linear-gradient(#c2d5ed, #E3E7FF);
+}
+.clearfix:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+div {
+  box-sizing: border-box;
+}
+.card-rapper {
+  max-width: 640px;
+  padding: 0 10px 10px;
+}
+.row {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: separate;
+  border-spacing: 1px 0;
+  margin-top: 1px;
+  font-size: 14px;
+}
+.card-key {
+  display: table-cell;
+  width: 140px;
+  background: #b0c4de;
+  padding: 5px;
+  font-weight: bold;
+}
+.card-value {
+  display: table-cell;
+  width: auto;
+  background: #e6e6fa;
+  padding: 5px;
+}
+.bold {
+  font-weight: bold;
+}
+/*↓help popup **********************************************************************/
+div.help {
+  padding: 10px;
+}
+div.help H2 {
+  display: block;
+  font-size: 1.17em;
+  font-weight: bold;
+}
+div.help > div {
+  padding: 5px 10px 10px 10px;
+}
+/* ↓ w2ui custom **********************************************************************/
+.w2ui-grid .w2ui-grid-toolbar {
+  background-color: #f0f2ff !important;
+}
+.w2ui-grid .w2ui-grid-toolbar table.w2ui-button.over {
+  background-color: #e2e5f9 !important;
+}
+.w2ui-grid .w2ui-grid-body table .w2ui-head {
+  background-image: linear-gradient(#f9f9f9, #E6E6FA) !important;
+}
+.w2ui-grid .w2ui-grid-body .w2ui-grid-records table tr.w2ui-selected {
+  color: #000 !important;
+  background-color: #E7BEFF !important;
+}
+span.w2ui-marker {
+  background-color: rgba(0, 0, 0, 0);
+}
+td.menu-text {
+  font-family: "Osaka－等幅", Osaka-mono, "ＭＳ ゴシック", "MS Gothic", monospace;
+}
+/* ↑ w2ui custom **********************************************************************/

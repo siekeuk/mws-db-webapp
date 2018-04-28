@@ -1,0 +1,154 @@
+// main: ..\stylesheets\style.less
+.deckList-rapper {
+  max-width: 640px;
+  height: 450px;
+  padding: 0 10px;
+}
+.decklist,
+#test_table {
+  width: 100%;
+  max-width: 620px;
+  font-size: 12px;
+  font-family: Consolas, 'Courier New', Courier, Monaco, monospace;
+  border: 1px solid gray;
+  margin-bottom: 20px;
+  tbody {
+    &#deckInfo_tbody {
+      &>tr {
+        &>td {
+          vertical-align: top;
+          padding-top: 10px;
+          padding-bottom: 10px;
+        }
+      }
+    }
+  }
+  thead {
+    border: 1px solid gray;
+    border-bottom: 1px double gray;
+    background-color: #B0C4DE;
+    .label {
+      padding-left: 1em;
+      font-family: sans-serif;
+    }
+    #header_deckName {
+      font-weight: bold;
+    }
+    th {
+      height: 2.5em;
+      input[type=file] {
+        text-align: right;
+      }
+      div {
+        &.first {
+          margin-top: 5px;
+        }
+        &.last {
+          margin-bottom: 5px;
+        }
+      }
+    }
+    span {
+      &#deckName {
+        padding-left: 1em;
+        font-weight: bold;
+        font-family: sans-serif;
+      }
+    }
+  }
+  tfoot {
+    border-top: 1px double gray;
+    tr {
+      &.last{
+         border-top:1px solid gray;
+         background-color: #95C8D4;
+      }
+      &.one-line{
+         border:1px solid gray;
+         background-color: #95C8D4;
+      }
+      &.none-disp{
+        display: none;
+      }
+      background-color: #B0C4DE;
+      th {
+        div {
+          padding: 3px;
+          &.first {
+            margin-top: 5px;
+          }
+          &.last {
+            margin-bottom: 5px;
+          }
+          &.button-line {
+            margin-top: 5px;
+            margin-bottom: 5px;
+          }
+        }
+      }
+      label {
+        width: 15%;
+        display: block;
+        float: left;
+        text-align: right;
+        padding-top: 3px;
+      }
+      input {
+        &[type=text] {
+          width: 35%;
+          height: 1.45em;
+        }
+      }
+      textarea {
+        width: 80%;
+        height: 60px;
+        line-height: 150%;
+      }
+    }
+  }
+  input {
+    font-size: 12px;
+    &#file {
+      font-size: 12px;
+      background-color: inherit;
+      border: none;
+    }
+  }
+  span {
+    padding: 3px;
+  }
+  td {
+    padding: 3px;
+  }
+  input:not([type=button]),
+  select,
+  textarea {
+    height: auto;
+    padding: 1px;
+    border: 1px solid #bbb;
+    border-radius: 3px;
+    color: #000;
+    padding-left: 5px;
+    font-size: 12px;
+  }
+  input[type=button] {
+    margin-top: 1px;
+    margin-right: 3px;
+    margin-left: 3px;
+  }
+  .cardtotal {
+    margin: 0 5px;
+    width: auto;
+  }
+  .right {
+    text-align: right;
+    padding-right: 5px;
+  }
+  input,
+  textarea {
+    &.readOnly {
+      border: 1px solid #B0C4DE;
+      background-color: #e6e6fa;
+    }
+  }
+}

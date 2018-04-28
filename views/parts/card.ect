@@ -1,0 +1,61 @@
+<div class="card-rapper">
+    <div class="row">
+        <div class="card-key">カード名</div>
+        <div class="card-value bold"><%- @cardInfo?.cardName.jpn %></div>
+    </div>
+    <div class="row">
+        <div class="card-key">英名</div>
+        <div class="card-value"><%- @cardInfo?.cardName.eng %></div>
+    </div>
+    <div class="row">
+        <div class="card-key">マナ・コスト</div>
+        <div class="card-value"><%- @cardInfo?.manaCost %></div>
+    </div>
+    <div class="row">
+        <div class="card-key">タイプ</div>
+        <div class="card-value"><%- @cardInfo?.typesLine %></div>
+    </div>
+    <div class="row">
+        <div class="card-key">ルールテキスト</div>
+        <div class="card-value">
+            <% if @cardInfo?.rulesText?.length : %>
+                <% for line in @cardInfo?.rulesText : %>
+                    <p class="rule text"><%- line %></p>
+                <% end %>
+            <% end %>
+        </div>
+    </div>
+    <div class="row">
+        <div class="card-key">
+            <% if @cardInfo?.typesLine.indexOf("サポート") != -1 : %>
+                忠誠度
+            <% else: %>
+                パワー／タフネス
+            <% end %>
+        </div>
+        <div class="card-value"><%- @cardInfo?.powTouLoyLine %></div>
+    </div>
+    <div class="row">
+        <div class="card-key">フレーバーテキスト</div>
+        <div class="card-value">
+            <% if @cardInfo?.flavorText?.length : %>
+                <% for line in @cardInfo?.flavorText : %>
+                    <p class="flavor text"><%- line %></p>
+                <% end %>
+            <% end %>
+        </div>
+    </div>
+    <div class="row">
+        <div class="card-key">レアリティ</div>
+        <div class="card-value"><%- @cardInfo?.rarityLine %></div>
+    </div>
+    <div class="row">
+        <div class="card-key">セット</div>
+        <div class="card-value"><%- @cardInfo?.expansionLine %> <%-
+            @cardInfo?.collectorNumber %></div>
+    </div>
+    <div class="row">
+        <div class="card-key">リリース日</div>
+        <div class="card-value"><%- @cardInfo?.releaseDate %></div>
+    </div>
+</div>

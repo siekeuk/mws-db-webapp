@@ -1,0 +1,19 @@
+<% extend 'layout' %>
+<div class="wrapper">
+    <main role="main">
+    <% include './parts/card' %>
+    </main>
+    <footer role="contentinfo"> </footer>
+</div>
+
+<% block 'nav' :%>
+  <% if @method is 'GET' : %>
+    <% include './parts/nav-header', { nav: @nav } %>
+  <% end %>
+<% end %>
+
+<% block 'js' :%>
+<script type="text/javascript" src="/javascripts/w2ui-1.4.2.js"></script>
+<% end %>
+
+<% @method %>

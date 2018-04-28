@@ -1,0 +1,204 @@
+//out:..\stylesheets\style.css,sourcemap:false,compress:false
+@import "../stylesheets/deck.less";
+header {
+  padding: 10px;
+}
+.title {
+  border-left: 5px solid #b0c4de;
+  border-bottom: 1px solid #b0c4de;
+  padding: 3px 10px;
+
+  // background: #e6e6fa;
+  background: linear-gradient(#e6e6fa, #E8E2FF);
+}
+h1 {
+  margin: 0 0 0 3px;
+  font-size: 1.2em;
+  font-weight: bold;
+  font-family: 'Lucida Grande', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif;
+  a {
+    font-weight: bold;
+    color: #000000;
+    text-decoration: none;
+  }
+}
+.exposition {
+  margin: 0 0 0 6px;
+  color: #999;
+  font-size: 0.7em;
+  a {
+    color: #5772AD;
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+      color: #234FDB;
+    }
+  }
+}
+div {
+  box-sizing: border-box;
+  #message {
+    color: blue;
+    &.error {
+      color: red;
+    }
+  }
+}
+.search-rapper {
+  max-width: 640px;
+  padding: 0 10px;
+}
+.wide-rapper {
+  width: 620px;
+  margin-bottom: 2px;
+}
+input {
+  &.half-wide {
+    width: 300px;
+  }
+}
+.button {
+  height: 22px;
+}
+.flavor {
+  font-family: "ＭＳ Ｐ明朝", "MS PMincho", "MS 明朝", serif;
+}
+.text {
+  line-height: 1.1;
+  margin: 3px 0;
+}
+button {
+  &.btn-height {
+    padding: 6px 12px 5px !important;
+  }
+  &.btn {
+    &:focus {
+      outline: 5px auto -webkit-focus-ring-color;
+    }
+  }
+}
+
+/* nav-header **********************************************************************/
+#nav-wrapper {
+  width: 100%;
+  height: 24px;
+  margin: -3px 0 -4px -11px;
+  ul {
+    list-style-type: none;
+    width: 100%;
+    height: 100%;
+  }
+  li {
+    width: 70px;
+    float: left;
+    font-family: 'Lucida Grande', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif;
+    font-size: 0.8em;
+    font-weight: bold;
+    a {
+      border-right: 1px solid lightsteelblue;
+      border-left: 1px solid lightsteelblue;
+      text-align: center;
+      padding-top: 0.2em;
+
+      // padding-left: 5px;
+      // padding-right: 5px;
+      width: 100%;
+      display: block;
+      background-color: #E3E7FF;
+      color: #310000;
+      margin-right: 1px;
+      background: linear-gradient(#E8E2FF, #c2d5ed);
+      &:hover {
+        background-color: #A6A6FF;
+        color: #ff0000;
+        background: linear-gradient(#c2d5ed, #E3E7FF);
+      }
+    }
+  }
+}
+.clearfix:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+div {
+  box-sizing: border-box;
+}
+.card-rapper {
+  max-width: 640px;
+  padding: 0 10px 10px;
+}
+.row {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: separate;
+  border-spacing: 1px 0;
+  margin-top: 1px;
+  font-size: 14px;
+}
+.card-key {
+  display: table-cell;
+  width: 140px;
+  background: #b0c4de;
+  padding: 5px;
+  font-weight: bold;
+}
+.card-value {
+  display: table-cell;
+  width: auto;
+  background: #e6e6fa;
+  padding: 5px;
+}
+.bold {
+  font-weight: bold;
+}
+/*↓help popup **********************************************************************/
+div.help {
+  padding: 10px;
+  H2 {
+    display: block;
+    font-size: 1.17em;
+    font-weight: bold;
+  }
+  &>div{
+    padding: 5px 10px 10px 10px;
+  }
+}
+
+/* ↓ w2ui custom **********************************************************************/
+.w2ui-grid {
+  .w2ui-grid-toolbar {
+    background-color: rgba(240, 242, 255, 1) !important;
+    table {
+      &.w2ui-button {
+        &.over {
+          background-color: rgba(226, 229, 249, 1) !important;
+        }
+      }
+    }
+  }
+  .w2ui-grid-body {
+    table .w2ui-head {
+      background-image: linear-gradient(#f9f9f9, #E6E6FA) !important;
+    }
+    .w2ui-grid-records {
+      table {
+        tr {
+          &.w2ui-selected {
+            color: #000 !important;
+            background-color: #E7BEFF !important;
+          }
+        }
+      }
+    }
+  }
+}
+span.w2ui-marker {
+  background-color: rgba(0, 0, 0, 0);
+}
+td.menu-text {
+  font-family: "Osaka－等幅", Osaka-mono, "ＭＳ ゴシック", "MS Gothic", monospace;
+}
+
+/* ↑ w2ui custom **********************************************************************/

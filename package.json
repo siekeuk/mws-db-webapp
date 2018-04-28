@@ -1,0 +1,31 @@
+{
+  "name": "mws-db-webapp",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "set NODE_ENV=production&& node-dev ./bin/www",
+    "test": "set NODE_ENV=development&& node-dev ./bin/www"
+  },
+  "dependencies": {
+    "body-parser": "~1.0.0",
+    "compression": "*",
+    "config": "*",
+    "cookie-parser": "~1.0.1",
+    "debug": "~0.7.4",
+    "ect": "^0.5.9",
+    "express": "~4.2.0",
+    "fluent-logger": "*",
+    "forever": "*",
+    "log4js": "2.5.2",
+    "moment": "*",
+    "mongoose": "~4.2.5",
+    "mongoose-auto-increment": "*",
+    "node-dev": "*",
+    "static-favicon": "~1.0.0",
+    "synchronize": "*",
+    "underscore": "*"
+  },
+  "main": "apps.js",
+  "repository": "https://github.com/siekeuk/mws-db-webapp.git",
+  "license": "MIT"
+}

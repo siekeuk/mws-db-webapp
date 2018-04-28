@@ -1,0 +1,12 @@
+#!/usr/bin/env node
+var debug = require('debug')('mws-db');
+var app = require('../app');
+var logger = require('../lib/logger');
+
+logger.debug('process.env.NODE_ENV:' + process.env.NODE_ENV);
+
+app.set('port', process.env.PORT || 8081);
+
+var server = app.listen(app.get('port'), function() {
+  logger.debug('Express server listening on port ' + server.address().port);
+});

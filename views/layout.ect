@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="keywords" content="<%- @keywords %>">
+  <meta name="description" content="<%- @description %>">
+  <meta property="og:type" content="<%- @og_type %>">
+  <meta property="og:title" content="<%- @title %>">
+  <meta property="og:image" content="<%- @og_image %>">
+  <meta property="og:url" content="<%- @og_url %>">
+  <meta property="og:description" content="<%- @description %>">
+  <meta property="og:site_name" content="<%- @og_site %>">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <% include './stylesheets/style' %>
+  <title><%- @title %></title>
+</head>
+<body>
+  <div class="wrapper">
+      <header role="banner">
+          <div class="title">
+              <h1><a href="<%- @og_url %>" target="_self"><%- @og_site %></a></h1>
+              <p class="exposition"><a href="http://example.com/" target="_blank">example</a> のサイトです</p>
+          </div>
+          <% content 'nav' %>
+      </header>
+  </div>
+  <% content %>
+</body>
+<% include './javascripts/script' %>
+<% content 'js' %>
+
+<% if @env isnt 'development' : %>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-70458325-1', 'auto');
+  ga('send', 'pageview');
+</script>
+<% end %>
+
+</html>
