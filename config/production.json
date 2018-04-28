@@ -1,0 +1,61 @@
+{
+  "prop": {
+    "db": {
+      "host": "",
+      "database": "",
+      "user": "",
+      "pass": ""
+    }
+  },
+  "resData": {
+    "keywords": "",
+    "description": "",
+    "og_type": "website",
+    "title": "",
+    "og_image": "",
+    "og_url": "",
+    "og_site": ""
+  },
+  "releaseDate": [
+    "19700101"
+  ],
+  "expansion": {
+    "T70": "TEMP1970",
+    "T00": "TEMP2000",
+    "T18": "TEMP2018"
+  },
+  "log4js": {
+    "appenders": {
+      "access": {
+        "type": "dateFile",
+        "filename": "log/access.log",
+        "pattern": "-yyyy-MM-dd"
+      },
+      "app": {
+        "type": "file",
+        "filename": "log/app.log",
+        "maxLogSize": 10485760,
+        "numBackups": 3
+      },
+      "errorFile": {
+        "type": "file",
+        "filename": "log/errors.log"
+      },
+      "errors": {
+        "type": "logLevelFilter",
+        "level": "error",
+        "appender": "errorFile"
+      }
+    },
+    "categories": {
+      "default": {
+        "appenders": ["app", "errors"],
+        "level": "info"
+      },
+      "http": {
+        "appenders": ["access"],
+        "level": "info"
+      }
+    }
+  }
+}

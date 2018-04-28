@@ -1,0 +1,63 @@
+{
+  "prop": {
+    "db": {
+      "host": "localhost",
+      "database": "test",
+      "user": "user",
+      "pass": "pass"
+    }
+  },
+  "resData": {
+    "keywords": "keywords",
+    "description": "description",
+    "og_type": "website",
+    "title": "title",
+    "og_image": "",
+    "og_url": "http://example.com/",
+    "og_site": "og_site"
+  },
+  "releaseDate": [
+    "20180101",
+    "20170101",
+    "20160101"
+  ],
+  "expansion": {
+    "T16": "TEST2016",
+    "T17": "TEST2016",
+    "T18": "TEST2016"
+  },
+  "log4js": {
+    "appenders": {
+      "access": {
+        "type": "console",
+        "filename": "log/access.log",
+        "pattern": "-yyyy-MM-dd"
+      },
+      "app": {
+        "type": "file",
+        "filename": "log/app.log",
+        "maxLogSize": 10485760,
+        "numBackups": 3
+      },
+      "errorFile": {
+        "type": "file",
+        "filename": "log/errors.log"
+      },
+      "errors": {
+        "type": "logLevelFilter",
+        "level": "error",
+        "appender": "errorFile"
+      }
+    },
+    "categories": {
+      "default": {
+        "appenders": ["app", "errors"],
+        "level": "info"
+      },
+      "http": {
+        "appenders": ["access"],
+        "level": "info"
+      }
+    }
+  }
+}
